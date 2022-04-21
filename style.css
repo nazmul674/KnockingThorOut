@@ -20,6 +20,7 @@ body {
   -webkit-animation: shake 7s infinite;
           animation: shake 7s infinite;
           color: #72a9d5;
+          justify-content: center;
 }
 
 .hulk {
@@ -225,7 +226,11 @@ body {
   margin-left: 0.625em;
   background: #bdbd00;
 }
-
+/*.axis{
+    position: absolute;
+    top: 45%;
+    left: 44%;
+}*/
  
 
 .thor {
@@ -234,6 +239,10 @@ body {
   z-index: 1000;
   margin-bottom: 220px;
   bottom: 0;
+}
+.thor{
+  transform: translate(220px,-0);
+  -webkit-transform: translate(350px,-0); /** Chrome & Safari **/
 }
 .thor .helmet {
   width: 0;
@@ -517,6 +526,7 @@ body {
       border: 2px solid #fff;
       border-radius: 70%;
       display: block;
+    
   }
   @keyframes mymove{
     0% {
@@ -540,7 +550,7 @@ body {
 
   .c2{
       animation-delay: 0.3s;
-    
+   
   }
 
   .c3{
