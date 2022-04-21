@@ -28,6 +28,7 @@ body {
   margin-left: 200px;
   bottom: 0px;
   margin-bottom: 300px;
+  z-index: -1;
 }
 .hulk .head {
   width: 4.713em;
@@ -244,17 +245,20 @@ body {
 .thor {
   left: 100%; 
       
-        animation: moveright 3s infinite;
+    /*transform: translate(100px, 0);*/
+        animation: moveright 2s infinite;
   /*transform: translate(350px,0);
   -webkit-transform: translate(350px,-0);
    transition: all 2s ease-in-out;
   -webkit-transition: all 2s ease-in-out;**/ 
+
+
 }
-@keyframes moveright{
-100% 
-{
+@keyframes moveright {
+ 100% {
+   opacity: 0;
   transform: translate(100px, 0);
-}
+  }
 
 }
 /**   #
