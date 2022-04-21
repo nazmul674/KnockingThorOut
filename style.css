@@ -247,10 +247,7 @@ body {
       
     /*transform: translate(100px, 0);*/
         animation: moveright 4s infinite;
-  /*transform: translate(350px,0);
-  -webkit-transform: translate(350px,-0);
-   transition: all 2s ease-in-out;
-  -webkit-transition: all 2s ease-in-out;**/ 
+
 
 
 }
@@ -266,12 +263,7 @@ body {
  }
     
 }
-/**   #
-.thor {
-  position: absolute;
-  transition: all 2s ease-in-out;
--webkit-transition: all 2s ease-in-out; 
-}**/
+
 
 .thor .helmet {
   width: 0;
@@ -576,11 +568,11 @@ element.style {
     }
     50% {
       opacity:1;
-      transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+      transform:  rotate(0deg) scaleX(10) scaleY(10) ;
     }
     100% {
       opacity:0;
-      transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+      transform:  rotate(0deg) scaleX(10) scaleY(10) ;
     }
   }  
 
