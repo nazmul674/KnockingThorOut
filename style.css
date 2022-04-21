@@ -240,10 +240,29 @@ body {
   margin-bottom: 220px;
   bottom: 0;
 }
-.thor{
-  transform: translate(220px,-0);
-  -webkit-transform: translate(350px,-0); /** Chrome & Safari **/
+.thor{ left: 0;   top: 50%;  margin-top: -100px;}
+.thor {
+  left: 100%; 
+      
+        animation: moveright 3s infinite;
+  /*transform: translate(350px,0);
+  -webkit-transform: translate(350px,-0);
+   transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;**/ 
 }
+@keyframes moveright{
+100% 
+{
+  transform: translate(100px, 0);
+}
+
+}
+/**   #
+.thor {
+  position: absolute;
+  transition: all 2s ease-in-out;
+-webkit-transition: all 2s ease-in-out; 
+}**/
 .thor .helmet {
   width: 0;
   height: 0;
@@ -515,18 +534,26 @@ body {
     transition: transform 20ms
 
 }*/
+
+element.style {
+}
+.c4 {
+    animation-delay: 0.9s;
+}
 .circle {
     height: 250px;
     width: 250px;
     background: red;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    left: 170px;
+    top: -70px;
     animation: mymove 5s infinite;
-      background-color: transparent;
-      border: 2px solid #fff;
-      border-radius: 70%;
-      display: block;
-    
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 70%;
+    display: block;
+
   }
   @keyframes mymove{
     0% {
