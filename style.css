@@ -125,7 +125,7 @@ body {
   height: 9.625em;
   border-radius: 50%;
   background: white;
-  position:relative
+  position:relative;
   transform: translateY(1.25em);
   margin-left: 4.563em;
 }
@@ -246,7 +246,7 @@ body {
   left: 100%; 
       
     /*transform: translate(100px, 0);*/
-        animation: moveright 2s infinite;
+        animation: moveright 4s infinite;
   /*transform: translate(350px,0);
   -webkit-transform: translate(350px,-0);
    transition: all 2s ease-in-out;
@@ -255,11 +255,16 @@ body {
 
 }
 @keyframes moveright {
- 100% {
-   opacity: 0;
-  transform: translate(100px, 0);
-  }
-
+ 30% {
+  transform: translateX(0em);
+ }
+ 66%{
+  transform: translateX(50em);
+ }
+ 88%{
+  transform: translateX(50em);
+ }
+    
 }
 /**   #
 .thor {
@@ -267,6 +272,7 @@ body {
   transition: all 2s ease-in-out;
 -webkit-transition: all 2s ease-in-out; 
 }**/
+
 .thor .helmet {
   width: 0;
   height: 0;
@@ -383,6 +389,8 @@ body {
   position: absolute;
   margin-left: 100px;
   box-shadow: -5px 0 0 #ffcee7, -10px 0 0 #ffcee7, -15px 0 0 #ffcee7, -20px 0 0 #ffcee7, -20px 90px 0 -15px #ffcee7, -20px 95px 0 -15px #ffcee7, -20px 100px 0 -15px #ffcee7;
+  -webkit-animation: thorRightarm 2s infinite;
+  animation: thorRightarm 2s infinite;
 }
 .thor .arm-right::before {
   content: "";
@@ -402,6 +410,8 @@ body {
   position: absolute;
   margin-top: 113px;
   margin-left: -5px;
+  
+
 }
 .thor .arm-left {
   width: 40px;
@@ -825,4 +835,22 @@ element.style {
 }
 .footer--love a {
   color: #43abf0;
+}
+
+@keyframes thorRightarm {
+  77% {
+    margin-top: 1em;
+    margin-left: -4.3em;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+  }
+  80% {
+    margin-top: -8.125em;
+    margin-left: -4.375em;
+    clip: rect(-0.188em, 6.563em, 13.875em, 0em);
+  }
+  93% {
+    margin-top: -8.125em;
+    margin-left: -4.375em;
+    clip: rect(-0.188em, 6.563em, 13.875em, 0em);
+  }
 }
