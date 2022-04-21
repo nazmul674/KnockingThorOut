@@ -94,8 +94,8 @@ body {
   background: #b5b500;
   position: absolute;
   clip: rect(-1em, 11.2em, 12.55em, 7.625em);
-  -webkit-animation: hulkRightarm 7s infinite;
-          animation: hulkRightarm 7s infinite;
+  -webkit-animation: hulkRightarm 4s infinite;
+          animation: hulkRightarm 4s infinite;
 }
 .hulk .right-arm::after {
   content: "";
@@ -117,8 +117,8 @@ body {
   background: #949400;
   position: absolute;
   clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
-  -webkit-animation: hulkLeftarm 7s infinite;
-          animation: hulkLeftarm 7s infinite;
+  -webkit-animation: hulkLeftarm 4s infinite;
+          animation: hulkLeftarm 4s infinite;
 }
 .hulk .left-arm::after {
   content: "";
@@ -140,8 +140,8 @@ body {
   background: #949400;
   box-shadow: 11.1em 0 0 #b5b500;
   z-index: 10;
-  -webkit-animation: hulkHands 7s infinite;
-          animation: hulkHands 7s infinite;
+  -webkit-animation: hulkHands 4s infinite;
+          animation: hulkHands 4s infinite;
 }
 .hulk .body {
   width: 12.5em;
@@ -673,76 +673,99 @@ element.style {
   }
 }
 @-webkit-keyframes hulkHands {
-  6% {
+  27% {
     box-shadow: 11.1em 0 0 #b5b500;
   }
-  77% {
+  30% {
     box-shadow: 11.1em 0 0 #b5b500;
     margin-left: -2.1em;
     transform: translate(0, 0);
   }
-  80% {
+  43% {
     margin-left: 0.5em;
     box-shadow: 8.5em 0 0 #b5b500;
     transform: translate(-0.9em, -19.9em);
   }
-  93% {
+  45% {
     margin-left: 0.5em;
     box-shadow: 8.5em 0 0 #b5b500;
     transform: translate(-0.9em, -19.9em);
   }
-  94% {
+  55% {
+    box-shadow: 11.1em 0 0 #b5b500;
+    margin-left: -2.1em;
+    transform: translate(0em, 0em);
+  }
+  60% {
     box-shadow: 11.1em 0 0 #b5b500;
     margin-left: -2.1em;
     transform: translate(0em, 0em);
   }
 }
 @keyframes hulkHands {
-  6% {
+  27% {
     box-shadow: 11.1em 0 0 #b5b500;
   }
-  77% {
+  30% {
     box-shadow: 11.1em 0 0 #b5b500;
     margin-left: -2.1em;
     transform: translate(0, 0);
   }
-  80% {
+  43% {
     margin-left: 0.5em;
     box-shadow: 8.5em 0 0 #b5b500;
     transform: translate(-0.9em, -19.9em);
   }
-  93% {
+  45% {
     margin-left: 0.5em;
     box-shadow: 8.5em 0 0 #b5b500;
     transform: translate(-0.9em, -19.9em);
   }
-  94% {
+  55% {
+    box-shadow: 11.1em 0 0 #b5b500;
+    margin-left: -2.1em;
+    transform: translate(0em, 0em);
+  }
+  60% {
     box-shadow: 11.1em 0 0 #b5b500;
     margin-left: -2.1em;
     transform: translate(0em, 0em);
   }
 }
 @-webkit-keyframes hulkRightarm {
-  77% {
+  27% {
     margin-top: 1em;
     margin-left: 2em;
     clip: rect(-1em, 11.2em, 12.55em, 7.625em);
   }
-  80% {
+  30% {
     margin-top: -8.125em;
     margin-left: 2.5em;
     clip: rect(0.563em, 13.363em, 13.75em, 6.625em);
   }
-  93% {
+  43% {
     margin-top: -8.125em;
     margin-left: 2.5em;
     clip: rect(0.563em, 13.363em, 13.75em, 6.625em);
   }
-  95% {
+  45% {
     margin-top: 1em;
     margin-left: 2em;
     clip: rect(-1em, 11.2em, 12.55em, 7.625em);
   }
+  55% {
+    margin-top: 1em;/*down to up*/
+    margin-left: 2em;/*left to right*/
+    clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    
+  }
+  60% {
+    margin-top: 1em;/*down to up*/
+    margin-left: 2em;/*left to right*/
+    clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    
+  }
+  
 }
 @keyframes hulkRightarm {
   27% {
@@ -772,6 +795,12 @@ element.style {
     margin-top: 1em;/*down to up*/
     margin-left: 2em;/*left to right*/
     clip: rect(-1em, 11.2em, 12.55em, 7.625em);
+    transform: rotate(0deg);
+  }
+  60% {
+    margin-top: 1em;/*down to up*/
+    margin-left: 5em;/*left to right*/
+    clip: rect(-1em, 11.2em, 12.55em, 7.625em);
     transform: rotate(-90deg);
   }
   
@@ -780,44 +809,64 @@ element.style {
 
 }
 @-webkit-keyframes hulkLeftarm {
-  77% {
+  27% {
     margin-top: 1em;
     margin-left: -4.3em;
     clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
   }
-  80% {
+  30% {
     margin-top: -8.125em;
     margin-left: -4.375em;
     clip: rect(-0.188em, 6.563em, 13.875em, 0em);
   }
-  93% {
+  43% {
     margin-top: -8.125em;
     margin-left: -4.375em;
     clip: rect(-0.188em, 6.563em, 13.875em, 0em);
   }
-  95% {
+  45% {
+    margin-top: 1em;
+    margin-left: -4.3em;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+  }
+  55% {
+    margin-top: 1em;
+    margin-left: -4.3em;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+  }
+  60% {
     margin-top: 1em;
     margin-left: -4.3em;
     clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
   }
 }
 @keyframes hulkLeftarm {
-  77% {
+  27% {
     margin-top: 1em;
     margin-left: -4.3em;
     clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
   }
-  80% {
+  30% {
     margin-top: -8.125em;
     margin-left: -4.375em;
     clip: rect(-0.188em, 6.563em, 13.875em, 0em);
   }
-  93% {
+  43% {
     margin-top: -8.125em;
     margin-left: -4.375em;
     clip: rect(-0.188em, 6.563em, 13.875em, 0em);
   }
-  95% {
+  45% {
+    margin-top: 1em;
+    margin-left: -4.3em;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+  }
+  55% {
+    margin-top: 1em;
+    margin-left: -4.3em;
+    clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
+  }
+  60% {
     margin-top: 1em;
     margin-left: -4.3em;
     clip: rect(-0.188em, 6.1em, 13.875em, 2.3em);
