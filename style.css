@@ -555,7 +555,7 @@ element.style {
     position: absolute;
     left: 170px;
     top: -70px;
-    animation: mymove 5s infinite;
+    animation: mymove 7s infinite;
     background-color: transparent;
     border: 2px solid #fff;
     border-radius: 70%;
