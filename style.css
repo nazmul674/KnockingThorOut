@@ -102,7 +102,7 @@ body {
   width: 12.063em;
   height: 9.625em;
   border-radius: 50%;
-  background: white;
+  background: #b5b500;
   position: absolute;
   /*transform: translateY(1.25em);*/
   margin-left: -3.313em;
@@ -138,7 +138,7 @@ body {
   margin-top: 11.7em;
   margin-left: -2.1em;
   background: #949400;
-  box-shadow: 11.1em 0 0 #b5b500;
+  box-shadow: 10em 1em 0 #b5b500;
   z-index: 10;
   -webkit-animation: hulkHands 7s infinite;
           animation: hulkHands 7s infinite;
@@ -237,7 +237,8 @@ body {
 
 .thor {
   position: absolute;
-  margin-left: 118px;
+  
+  margin-left: -52px;
   z-index: 1000;
   margin-bottom: 220px;
   bottom: 0;
@@ -708,6 +709,16 @@ element.style {
     margin-left: -2.1em;
     transform: translate(0em, 0em);
   }
+  88%{
+    width: 4.375em;
+  height: 4.375em;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 11.7em;
+  margin-left: -2.1em;
+  background: #949400;
+  box-shadow: 20.1em -10em 0 #b5b500;
+  }
 }
 @keyframes hulkHands {
   /*6% {
@@ -777,6 +788,7 @@ element.style {
     margin-left: -2.1em;
     transform: translate(0em, 0em);
   }
+  
 }
 @-webkit-keyframes hulkRightarm {
   27% {
@@ -800,10 +812,18 @@ element.style {
     clip: rect(-1em, 11.2em, 12.55em, 7.625em);
   }
   80% {
-    margin-top: 1em;
+    width: 4.375em;
+  height: 4.375em;
+  position: absolute;
+  border-radius: 50%;
+  margin-top: 11.7em;
+  margin-left: -2.1em;
+  background: #949400;
+  box-shadow: 18.1em -9em 0 #b5b500;
+    margin-top: -2em;
     margin-left: 5em;
     clip: rect(-1em, 11.2em, 12.55em, 7.625em);
-    transform: rotate(-90deg);
+    transform: rotate(90deg);
   }
 }  
 @keyframes hulkRightarm {
