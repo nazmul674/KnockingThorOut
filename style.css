@@ -253,10 +253,10 @@ body {
 
 }
 @keyframes moveright {
- 30% {
+ 65% {
   transform: translateX(0em);
  }
- 66%{
+ 75%{
   transform: translateX(50em);
  }
  88%{
